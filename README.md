@@ -10,6 +10,7 @@ but includes some steps that guide fails to cover.
 - `cd` to the `/app/` directory.
 - Run `gcloud auth login` and go through the in-browser prompts that pop up.
 - `gcloud config set project <PROJECT_ID>`, where `PROJECT_ID` is the ID listed on the cloud console "Dashboard" page under "Project Info".
+
 The quickstart guide from Google misses a few now-important steps, covered [here](https://www.googlecloudcommunity.com/gc/Serverless/Error-during-gcloud-app-deploy-for-GAE-app-quot-Failed-to-create/m-p/777154):
 - Go to "Project Settings" -> "IAM" and find the principal with the name "App Engine default service account". Click the pencil icon "Edit principal".
 - Search and add the following permissions: "Artifact Registry Create-on-Push Writer", "Storage Admin", and "Logs Writer".
